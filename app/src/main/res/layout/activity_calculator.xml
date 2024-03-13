@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Calculator">
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_default="spread"
+        tools:layout_editor_absoluteX="1dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/BTN7"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:onClick="BTN7"
+                android:text="@string/seven"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/BTN8"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:onClick="BTN8"
+                android:text="@string/eight"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/BTN9"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:onClick="BTN9"
+                android:text="@string/nine"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/BTNdivide"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:onClick="BTNdivide"
+                android:text="@string/divide"
+                android:textColor="#000000" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/BTN4"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:onClick="BTN4"
+                android:text="@string/four"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/BTN5"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:onClick="BTN5"
+                android:text="@string/five"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/BTN6"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:onClick="BTN6"
+                android:text="@string/six"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/BTNmultiply"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:onClick="BTNmultiply"
+                android:text="@string/multiply"
+                android:textColor="#000000" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/BTN1"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:onClick="BTN1"
+                android:text="@string/one"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/BTN2"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:onClick="BTN2"
+                android:text="@string/two"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/BTN3"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:onClick="BTN3"
+                android:text="@string/three"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/BTNminus"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:onClick="BTNminus"
+                android:text="@string/minus"
+                android:textColor="#000000" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/BTNdecimal"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:onClick="BTNdecimal"
+                android:text="@string/decimal"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/BTN0"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:onClick="BTN0"
+                android:text="@string/zero"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/BTNplus"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:onClick="BTNplus"
+                android:text="@string/plus"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/BTNequal"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:onClick="BTNequal"
+                android:text="@string/equals"
+                android:textColor="#000000" />
+        </TableRow>
+    </TableLayout>
+
+    <EditText
+        android:id="@+id/input"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/display"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:autofillHints="false"
+        android:inputType="none"
+        android:textSize="36sp"
+        android:textAlignment="textEnd"
+        tools:ignore="LabelFor" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+    <!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--    android:layout_width="match_parent"-->
+    <!--    android:layout_height="match_parent"-->
+    <!--    xmlns:app="http://schemas.android.com/apk/res-auto">-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/resultTv"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_above="@id/Button_Layout"-->
+    <!--        android:layout_marginStart="16dp"-->
+    <!--        android:layout_marginTop="16dp"-->
+    <!--        android:layout_marginEnd="16dp"-->
+    <!--        android:layout_marginBottom="16dp"-->
+    <!--        android:text="0"-->
+    <!--        android:textAlignment="textEnd"-->
+    <!--        android:textColor="@color/black"-->
+    <!--        android:textSize="64dp" />-->
+
+    <!--    <EditText-->
+    <!--        android:id="@+id/solutionTv"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:layout_above="@id/Button_Layout"-->
+    <!--        android:layout_marginStart="16dp"-->
+    <!--        android:layout_marginTop="16dp"-->
+    <!--        android:layout_marginEnd="16dp"-->
+    <!--        android:layout_marginBottom="16dp"-->
+    <!--        android:text="0"-->
+    <!--        android:textAlignment="textEnd"-->
+    <!--        android:textColor="@color/black"-->
+    <!--        android:textSize="32dp" />-->
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:orientation="vertical"-->
+    <!--        android:layout_alignParentBottom="true"-->
+    <!--        android:paddingTop="16dp"-->
+    <!--        android:id="@+id/Button_Layout">-->
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:gravity="center"-->
+    <!--            android:orientation="horizontal">-->
+
+    <!--            <com.google.android.material.button.MaterialButton-->
+    <!--                android:id="@+id/buttonC"-->
+    <!--                android:layout_width="72dp"-->
+    <!--                android:layout_height="72dp"-->
+    <!--                android:layout_margin="12dp"-->
+    <!--                android:text="C"-->
+    <!--                android:textSize="36dp"-->
+    <!--                app:cornerRadius="36dp" />-->
+
+    <!--            <com.google.android.material.button.MaterialButton-->
+    <!--                android:layout_width="72dp"-->
+    <!--                android:layout_height="72dp"-->
+    <!--                android:id="@+id/buttonOpen"-->
+    <!--                app:cornerRadius="36dp"-->
+    <!--                android:layout_margin="12dp"-->
+    <!--                android:text="("-->
+    <!--                android:textSize="36dp"/>-->
+    <!--            <com.google.android.material.button.MaterialButton-->
+    <!--                android:layout_width="72dp"-->
+    <!--                android:layout_height="72dp"-->
+    <!--                android:id="@+id/buttonClose"-->
+    <!--                app:cornerRadius="36dp"-->
+    <!--                android:layout_margin="12dp"-->
+    <!--                android:text=")"-->
+    <!--                android:textSize="36dp"/>-->
+    <!--            <com.google.android.material.button.MaterialButton-->
+    <!--                android:layout_width="72dp"-->
+    <!--                android:layout_height="72dp"-->
+    <!--                android:id="@+id/buttonDivide"-->
+    <!--                app:cornerRadius="36dp"-->
+    <!--                android:layout_margin="12dp"-->
+    <!--                android:text="/"-->
+    <!--                android:textSize="36dp"/>-->
+
+
+    <!--        </LinearLayout>-->
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:gravity="center"-->
+    <!--            android:orientation="horizontal">-->
+
+    <!--            <com.google.android.material.button.MaterialButton-->
+    <!--                android:layout_width="72dp"-->
+    <!--                android:layout_height="72dp"-->
+    <!--                android:id="@+id/button7"-->
+    <!--                app:cornerRadius="36dp"-->
+    <!--                android:layout_margin="12dp"-->
+    <!--                android:text="7"-->
+    <!--                android:textSize="36dp"/>-->
+    <!--            <com.google.android.material.button.MaterialButton-->
+    <!--                android:layout_width="72dp"-->
+    <!--                android:layout_height="72dp"-->
+    <!--                android:id="@+id/button8"-->
+    <!--                app:cornerRadius="36dp"-->
+    <!--                android:layout_margin="12dp"-->
+    <!--                android:text="8"-->
+    <!--                android:textSize="36dp"/>-->
+    <!--            <com.google.android.material.button.MaterialButton-->
+    <!--                android:layout_width="72dp"-->
+    <!--                android:layout_height="72dp"-->
+    <!--                android:id="@+id/button9"-->
+    <!--                app:cornerRadius="36dp"-->
+    <!--                android:layout_margin="12dp"-->
+    <!--                android:text="9"-->
+    <!--                android:textSize="36dp"/>-->
+    <!--            <com.google.android.material.button.MaterialButton-->
+    <!--                android:layout_width="72dp"-->
+    <!--                android:layout_height="72dp"-->
+    <!--                android:id="@+id/buttonMultiply"-->
+    <!--                app:cornerRadius="36dp"-->
+    <!--                android:layout_margin="12dp"-->
+    <!--                android:text="*"-->
+    <!--                android:textSize="36dp"/>-->
+
+
+    <!--        </LinearLayout>-->
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:gravity="center"-->
+    <!--            android:orientation="horizontal">-->
+
+    <!--            <com.google.android.material.button.MaterialButton-->
+    <!--                android:layout_width="72dp"-->
+    <!--                android:layout_height="72dp"-->
+    <!--                android:id="@+id/button4"-->
+    <!--                app:cornerRadius="36dp"-->
+    <!--                android:layout_margin="12dp"-->
+    <!--                android:text="4"-->
+    <!--                android:textSize="36dp"/>-->
+    <!--            <com.google.android.material.button.MaterialButton-->
+    <!--                android:layout_width="72dp"-->
+    <!--                android:layout_height="72dp"-->
+    <!--                android:id="@+id/button5"-->
+    <!--                app:cornerRadius="36dp"-->
+    <!--                android:layout_margin="12dp"-->
+    <!--                android:text="5"-->
+    <!--                android:textSize="36dp"/>-->
+    <!--            <com.google.android.material.button.MaterialButton-->
+    <!--                android:layout_width="72dp"-->
+    <!--                android:layout_height="72dp"-->
+    <!--                android:id="@+id/button6"-->
+    <!--                app:cornerRadius="36dp"-->
+    <!--                android:layout_margin="12dp"-->
+    <!--                android:text="6"-->
+    <!--                android:textSize="36dp"/>-->
+    <!--            <com.google.android.material.button.MaterialButton-->
+    <!--                android:layout_width="72dp"-->
+    <!--                android:layout_height="72dp"-->
+    <!--                android:id="@+id/buttonMinus"-->
+    <!--                app:cornerRadius="36dp"-->
+    <!--                android:layout_margin="12dp"-->
+    <!--                android:text="-"-->
+    <!--                android:textSize="36dp"/>-->
+
+
+    <!--        </LinearLayout>-->
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:gravity="center"-->
+    <!--            android:orientation="horizontal">-->
+
+    <!--            <com.google.android.material.button.MaterialButton-->
+    <!--                android:layout_width="72dp"-->
+    <!--                android:layout_height="72dp"-->
+    <!--                android:id="@+id/button1"-->
+    <!--                app:cornerRadius="36dp"-->
+    <!--                android:layout_margin="12dp"-->
+    <!--                android:text="1"-->
+    <!--                android:textSize="36dp"/>-->
+    <!--            <com.google.android.material.button.MaterialButton-->
+    <!--                android:layout_width="72dp"-->
+    <!--                android:layout_height="72dp"-->
+    <!--                android:id="@+id/button2"-->
+    <!--                app:cornerRadius="36dp"-->
+    <!--                android:layout_margin="12dp"-->
+    <!--                android:text="2"-->
+    <!--                android:textSize="36dp"/>-->
+    <!--            <com.google.android.material.button.MaterialButton-->
+    <!--                android:layout_width="72dp"-->
+    <!--                android:layout_height="72dp"-->
+    <!--                android:id="@+id/button3"-->
+    <!--                app:cornerRadius="36dp"-->
+    <!--                android:layout_margin="12dp"-->
+    <!--                android:text="3"-->
+    <!--                android:textSize="36dp"/>-->
+    <!--            <com.google.android.material.button.MaterialButton-->
+    <!--                android:layout_width="72dp"-->
+    <!--                android:layout_height="72dp"-->
+    <!--                android:id="@+id/buttonAdd"-->
+    <!--                app:cornerRadius="36dp"-->
+    <!--                android:layout_margin="12dp"-->
+    <!--                android:text="+"-->
+    <!--                android:textSize="36dp"/>-->
+
+
+    <!--        </LinearLayout>-->
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:gravity="center"-->
+    <!--            android:orientation="horizontal">-->
+
+    <!--            <com.google.android.material.button.MaterialButton-->
+    <!--                android:layout_width="72dp"-->
+    <!--                android:layout_height="72dp"-->
+    <!--                android:id="@+id/buttonAC"-->
+    <!--                app:cornerRadius="36dp"-->
+    <!--                android:layout_margin="12dp"-->
+    <!--                android:text="AC"-->
+    <!--                android:textSize="25dp"/>-->
+    <!--            <com.google.android.material.button.MaterialButton-->
+    <!--                android:layout_width="72dp"-->
+    <!--                android:layout_height="72dp"-->
+    <!--                android:id="@+id/button0"-->
+    <!--                app:cornerRadius="36dp"-->
+    <!--                android:layout_margin="12dp"-->
+    <!--                android:text="0"-->
+    <!--                android:textSize="36dp"/>-->
+    <!--            <com.google.android.material.button.MaterialButton-->
+    <!--                android:layout_width="72dp"-->
+    <!--                android:layout_height="72dp"-->
+    <!--                android:id="@+id/buttonDot"-->
+    <!--                app:cornerRadius="36dp"-->
+    <!--                android:layout_margin="12dp"-->
+    <!--                android:text="."-->
+    <!--                android:textSize="36dp"/>-->
+    <!--            <com.google.android.material.button.MaterialButton-->
+    <!--                android:layout_width="72dp"-->
+    <!--                android:layout_height="72dp"-->
+    <!--                android:id="@+id/buttonEquals"-->
+    <!--                app:cornerRadius="36dp"-->
+    <!--                android:layout_margin="12dp"-->
+    <!--                android:text="="-->
+    <!--                android:textSize="36dp"/>-->
+    <!--        </LinearLayout>-->
+    <!--    </LinearLayout>-->
+    <!--</RelativeLayout>-->
