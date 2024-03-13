@@ -54,7 +54,44 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintWidth_default="spread"
-        tools:layout_editor_absoluteX="1dp">
+        tools:layout_editor_absoluteX="1dp"
+        tools:ignore="NotSibling">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/BTNAC"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:onClick="BTNAC"
+                android:text="AC"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/BTNC"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:onClick="BTNC"
+                android:text="C"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/BTNpercent"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:onClick="BTNpercent"
+                android:text="%"
+                android:textColor="#000000" />
+
+        </TableRow>
 
         <TableRow
             android:layout_width="match_parent"

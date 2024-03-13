@@ -341,13 +341,15 @@
 //}
 
 package com.example.androidprojectcollection;
-import androidx.appcompat.app.AppCompatActivity;
+
 import android.content.Context;
 import android.os.Bundle;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
-import org.w3c.dom.Text;
+
+import androidx.appcompat.app.AppCompatActivity;
 public class CalculatorExercise extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -355,7 +357,7 @@ public class CalculatorExercise extends AppCompatActivity {
         setContentView(R.layout.activity_calculator);
         initButtons();
         textResult = findViewById(R.id.tvResult);
-        equationString = findViewById(R.id.solLayout);
+        equationString = findViewById(R.id.tvSolution);
         setButtonOnClicks();
     }
     private Button btnAC;
@@ -378,14 +380,14 @@ public class CalculatorExercise extends AppCompatActivity {
     private Button btn9;
     private Button btnDecimal;
     private TextView textResult;
-    private TextView equationString;
+    private EditText equationString;
     private boolean hasDecimal;
     public Calculator calculator = new Calculator();
 
     private void initButtons() {
-//        btnAC = findViewById(R.id.acBTN);
-//        btnC = findViewById(R.id.clear);
-        //btnPercent = findViewById(R.id.btnPercent);
+        btnAC = findViewById(R.id.BTNAC);
+        btnC = findViewById(R.id.BTNC);
+        btnPercent = findViewById(R.id.BTNpercent);
         btnDivide = findViewById(R.id.BTNdivide);
         btnAdd = findViewById(R.id.BTNplus);
         btnMinus = findViewById(R.id.BTNminus);
@@ -419,12 +421,12 @@ public class CalculatorExercise extends AppCompatActivity {
                 equationString.setText(temp);
             }
         });
-        // btnPercent.setOnClickListener(v -> {
-        // Context context = getApplicationContext();
-        //String featureNotAdded = "Feature not added.";
-        // Toast toast = Toast.makeText(context, featureNotAdded, Toast.LENGTH_SHORT);
-        //toast.show();
-        //});
+         btnPercent.setOnClickListener(v -> {
+         Context context = getApplicationContext();
+        String featureNotAdded = "Feature not added.";
+         Toast toast = Toast.makeText(context, featureNotAdded, Toast.LENGTH_SHORT);
+        toast.show();
+        });
         btnDivide.setOnClickListener(v -> {
             opChecker("/");
         });
