@@ -1,12 +1,12 @@
 package com.example.androidprojectcollection;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v){
                 Intent intent1 = new Intent(
                         MainActivity.this,
-                        Calculator.class
+                        CalculatorExercise.class
                 );
                 startActivity(intent1);
             }
