@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
 
     @SuppressLint("MissingInflatedId")
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
@@ -43,14 +43,14 @@ public class MainActivity extends AppCompatActivity {
         });
 
         btn3 = findViewById(R.id.btnCalc);
-        btn3.setOnClickListener(new View.OnClickListener(){
+        btn3.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v){
-                Intent intent1 = new Intent(
+            public void onClick(View view) {
+                Intent openCalc = new Intent(
                         MainActivity.this,
-                        CalculatorExercise.class
+                        Calculator.class
                 );
-                startActivity(intent1);
+                startActivity(openCalc);
             }
         });
     }

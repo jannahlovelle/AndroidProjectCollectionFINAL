@@ -21,8 +21,10 @@
                 android:name=".CloseActivity"
                 android:exported="false"/>
         <activity
-            android:name=".CalculatorExercise"
+            android:name=".Calculator"
             android:exported="true"/>
+
+        <activity android:name=".Match3" android:exported="false"/>
         <activity
             android:name=".MainActivity"
             android:exported="true">

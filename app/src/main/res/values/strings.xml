@@ -25,5 +25,6 @@
         <string name="decimal">.</string>
         <string name="equals">=</string>
         <string name="display">Enter a value</string>
+    <string name="empty"></string>
 
 </resources>

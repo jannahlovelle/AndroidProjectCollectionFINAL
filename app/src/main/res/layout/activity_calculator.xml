@@ -5,56 +5,49 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CalculatorExercise">
+    tools:context=".Calculator">
 
-    <LinearLayout
+    <EditText
+        android:id="@+id/tvInput"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:autofillHints="false"
+        android:inputType="none"
+        android:text=""
+        android:textAlignment="textEnd"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="LabelFor,VisualLintTextFieldSize" />
 
-        <EditText
-            android:id="@+id/tvSolution"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:autofillHints="false"
-            android:inputType="none"
-            android:text=""
-            android:textAlignment="textEnd"
-            android:textSize="36sp"
-            tools:ignore="LabelFor,VisualLintTextFieldSize" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/tvResult"
-                android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:layout_marginTop="120dp"
-                android:autofillHints="false"
-                android:inputType="none"
-                android:text=""
-                android:textAlignment="textEnd"
-                android:textSize="36sp"
-                tools:ignore="LabelFor,VisualLintTextFieldSize" />
-        </LinearLayout>
-
-    </LinearLayout>
+    <TextView
+        android:id="@+id/tvOutput"
+        android:layout_width="match_parent"
+        android:layout_height="107dp"
+        android:autofillHints="false"
+        android:inputType="none"
+        android:text=""
+        android:textAlignment="textEnd"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvInput"
+        tools:ignore="LabelFor,VisualLintTextFieldSize" />
 
     <TableLayout
         android:id="@+id/tableLayout"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="150dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvResult"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvInput"
         app:layout_constraintWidth_default="spread"
-        tools:layout_editor_absoluteX="1dp"
         tools:ignore="NotSibling">
 
         <TableRow
@@ -64,8 +57,8 @@
             <Button
                 android:id="@+id/BTNAC"
                 style="@style/Widget.AppCompat.Button.Borderless"
-                android:layout_width="0dp"
-                android:layout_height="100dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:onClick="BTNAC"
                 android:text="AC"
@@ -74,8 +67,8 @@
             <Button
                 android:id="@+id/BTNC"
                 style="@style/Widget.AppCompat.Button.Borderless"
-                android:layout_width="0dp"
-                android:layout_height="100dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:onClick="BTNC"
                 android:text="C"
@@ -84,8 +77,8 @@
             <Button
                 android:id="@+id/BTNpercent"
                 style="@style/Widget.AppCompat.Button.Borderless"
-                android:layout_width="0dp"
-                android:layout_height="100dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:onClick="BTNpercent"
                 android:text="%"
@@ -100,8 +93,8 @@
             <Button
                 android:id="@+id/BTN7"
                 style="@style/Widget.AppCompat.Button.Borderless"
-                android:layout_width="0dp"
-                android:layout_height="100dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:onClick="BTN7"
                 android:text="@string/seven"
@@ -110,8 +103,8 @@
             <Button
                 android:id="@+id/BTN8"
                 style="@style/Widget.AppCompat.Button.Borderless"
-                android:layout_width="0dp"
-                android:layout_height="100dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:onClick="BTN8"
                 android:text="@string/eight"
@@ -120,8 +113,8 @@
             <Button
                 android:id="@+id/BTN9"
                 style="@style/Widget.AppCompat.Button.Borderless"
-                android:layout_width="0dp"
-                android:layout_height="100dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:onClick="BTN9"
                 android:text="@string/nine"
@@ -130,8 +123,8 @@
             <Button
                 android:id="@+id/BTNdivide"
                 style="@style/Widget.AppCompat.Button.Borderless"
-                android:layout_width="0dp"
-                android:layout_height="100dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:onClick="BTNdivide"
                 android:text="@string/divide"
@@ -145,8 +138,8 @@
             <Button
                 android:id="@+id/BTN4"
                 style="@style/Widget.AppCompat.Button.Borderless"
-                android:layout_width="0dp"
-                android:layout_height="100dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:onClick="BTN4"
                 android:text="@string/four"
@@ -155,8 +148,8 @@
             <Button
                 android:id="@+id/BTN5"
                 style="@style/Widget.AppCompat.Button.Borderless"
-                android:layout_width="0dp"
-                android:layout_height="100dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:onClick="BTN5"
                 android:text="@string/five"
@@ -165,8 +158,8 @@
             <Button
                 android:id="@+id/BTN6"
                 style="@style/Widget.AppCompat.Button.Borderless"
-                android:layout_width="0dp"
-                android:layout_height="100dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:onClick="BTN6"
                 android:text="@string/six"
@@ -175,8 +168,8 @@
             <Button
                 android:id="@+id/BTNmultiply"
                 style="@style/Widget.AppCompat.Button.Borderless"
-                android:layout_width="0dp"
-                android:layout_height="100dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:onClick="BTNmultiply"
                 android:text="@string/multiply"
@@ -190,8 +183,8 @@
             <Button
                 android:id="@+id/BTN1"
                 style="@style/Widget.AppCompat.Button.Borderless"
-                android:layout_width="0dp"
-                android:layout_height="100dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:onClick="BTN1"
                 android:text="@string/one"
@@ -201,8 +194,8 @@
             <Button
                 android:id="@+id/BTN2"
                 style="@style/Widget.AppCompat.Button.Borderless"
-                android:layout_width="0dp"
-                android:layout_height="100dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:onClick="BTN2"
                 android:text="@string/two"
@@ -212,8 +205,8 @@
             <Button
                 android:id="@+id/BTN3"
                 style="@style/Widget.AppCompat.Button.Borderless"
-                android:layout_width="0dp"
-                android:layout_height="100dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:onClick="BTN3"
                 android:text="@string/three"
@@ -222,8 +215,8 @@
             <Button
                 android:id="@+id/BTNminus"
                 style="@style/Widget.AppCompat.Button.Borderless"
-                android:layout_width="0dp"
-                android:layout_height="100dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:onClick="BTNminus"
                 android:text="@string/minus"
@@ -238,8 +231,8 @@
             <Button
                 android:id="@+id/BTNdecimal"
                 style="@style/Widget.AppCompat.Button.Borderless"
-                android:layout_width="0dp"
-                android:layout_height="100dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:onClick="BTNdecimal"
                 android:text="@string/decimal"
@@ -248,8 +241,8 @@
             <Button
                 android:id="@+id/BTN0"
                 style="@style/Widget.AppCompat.Button.Borderless"
-                android:layout_width="0dp"
-                android:layout_height="100dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:onClick="BTN0"
                 android:text="@string/zero"
@@ -258,8 +251,8 @@
             <Button
                 android:id="@+id/BTNplus"
                 style="@style/Widget.AppCompat.Button.Borderless"
-                android:layout_width="0dp"
-                android:layout_height="100dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:onClick="BTNplus"
                 android:text="@string/plus"
@@ -268,8 +261,8 @@
             <Button
                 android:id="@+id/BTNequal"
                 style="@style/Widget.AppCompat.Button.Borderless"
-                android:layout_width="0dp"
-                android:layout_height="100dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:onClick="BTNequal"
                 android:text="@string/equals"
