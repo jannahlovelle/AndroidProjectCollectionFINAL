@@ -67,4 +67,11 @@ public class Match3 extends AppCompatActivity {
             }
         }
     }
+    public void checkCycle(int c, Button btn){
+        if (c == 0) {
+            btn.setBackgroundColor(getResources().getColor(R.color.purple_200));
+        } else if (c == 1) {
+
+        }
+    }
 }
