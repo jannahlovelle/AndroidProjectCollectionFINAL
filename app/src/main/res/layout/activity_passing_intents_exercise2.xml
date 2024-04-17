@@ -95,6 +95,25 @@
 
         <LinearLayout
             android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:text="Phone" />
+
+            <TextView
+                android:id="@+id/txt2Phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="41dp"
             android:orientation="horizontal">
 
