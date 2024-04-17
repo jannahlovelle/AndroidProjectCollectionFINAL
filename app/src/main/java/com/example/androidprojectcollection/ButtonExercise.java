@@ -1,16 +1,14 @@
 package com.example.androidprojectcollection;
 
+import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
-
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.constraintlayout.widget.ConstraintLayout;
-
-import android.content.Intent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.RelativeLayout;
-import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.snackbar.BaseTransientBottomBar;
 import com.google.android.material.snackbar.Snackbar;
@@ -24,7 +22,7 @@ public class ButtonExercise extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_button_exercise);
 
-        RelativeLayout rootLayout = findViewById(R.id.Rlayout);
+        @SuppressLint({"MissingInflatedId", "LocalSuppress"}) RelativeLayout rootLayout = findViewById(R.id.RLayout);
 
         btn1 = findViewById(R.id.button5);
         btn2 = findViewById(R.id.button7);

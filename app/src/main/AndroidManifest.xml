@@ -23,6 +23,10 @@
         <activity
             android:name=".Calculator"
             android:exported="true"/>
+        <activity android:name=".PassingIntentsExercise"
+            android:exported="false"/>
+        <activity android:name=".PassingIntentsExercise2"
+            android:exported="false"/>
 
         <activity android:name=".Match3" android:exported="false"/>
         <activity

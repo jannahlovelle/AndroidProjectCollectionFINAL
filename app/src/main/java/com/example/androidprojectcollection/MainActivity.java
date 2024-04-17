@@ -10,7 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button btn1, btn2, btn3;
+    Button btn1, btn2, btn3, btnpassIntent;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -51,6 +51,18 @@ public class MainActivity extends AppCompatActivity {
                         Calculator.class
                 );
                 startActivity(openCalc);
+            }
+        });
+
+        btnpassIntent = findViewById(R.id.btnPassingIntent);
+        btnpassIntent.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent openPassIntent = new Intent(
+                        MainActivity.this,
+                        PassingIntentsExercise.class
+                );
+                startActivity(openPassIntent);
             }
         });
     }
